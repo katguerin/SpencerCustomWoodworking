@@ -49,73 +49,54 @@
 
     <div class="row no-gutters">
         <div class="col-md-6">
-          <img src="images/tools.jpg" class="card-img" style="max-width: 600px;" alt="image of tools">
+          <img src="images/tools.jpg" class="card-img" style="max-width:600px" alt="image of tools">
         </div>
     </div>
-
+<!-- needs to float to the right of the image if browser is big enough -->
     <div class="col-md-6">
         <div class="card-body">
           <form>
             <div class="row mb-3">
-              <div class="col-sm-2"></div>
+              <div class="col-sm-1"></div>
                 <div class="col-sm-10">
 <!-- validate email not working -->
                 <input type="inputEmail" class="form-control" placeholder="Email" id="inputEmail" oninput="ValidateEmail(document.form1.text1)">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
             </div>
 
             <div class="row mb-3">
-              <div class="col-sm-2"></div>
+              <div class="col-sm-1"></div>
                 <div class="col-sm-5">
                     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
+                <div class="col-sm-1"></div>
             </div>
 
             <div class="row mb-3">
-              <div class="col-sm-2"></div>
+              <div class="col-sm-1"></div>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
                 </div>
             </div>
-
-            
+            <!-- need 1 colum spacer in front of form select -->
             <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">I am interested in: </legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                  <label class="form-check-label" for="gridRadios1">
-                    Decor
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">
-                    Custom Home or Commercial Project
-                  </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                    <label class="form-check-label" for="gridRadios3">
-                      Furniture
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4" onClick="ShowHideDiv()">
-                    <label class="form-check-label" for="gridRadios4">
-                      Other
-                    </label>
-                    <div id="otherText" style="display: none">
-                        Brief description of what you're looking for:
-                        <input type="text" id="txtBox"/>
-                    </div>
-                     
+              <legend class="col-form-label pt-0">
+                <div class="col-sm-11">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected>I am interested in:</option>
+                  <option value="1">Custom Decor</option>
+                  <option value="2">Custom Home or Commercial Project</option>
+                  <option value="3">Custom Furniture</option>
+                  <option value="4">Repair</option>
+                  <option value="5">Other</option>
+                </select>
                 </div>
                 
-              </div>
+              </legend> 
             </fieldset>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -123,7 +104,7 @@
             </div>
           </form>
         </div>
-    </div>
+      </div>
 
     </body>
 </html>
