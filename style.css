@@ -1,9 +1,21 @@
+.navbar {
+    color: #ddd9d6;
+    background-color: #193042;
+}
+
+.nav-link {
+    color: #ddd9d6;
+    background-color: #193042;
+}
+
 .card {
-    max-width: 1300px;
+    max-width: 1100px;
+    background-color: #ddd9d6;
+    
 }
 
 body {
-    background-color: #6c757d;
+    background-color: #252525;
 }
 
 a {
@@ -18,7 +30,7 @@ a {
 p {
     float: left;
     font-size: 1.5rem;
-    color: white;
+    color: #ddd9d6;
     letter-spacing: .1rem;
     text-align: left;
     line-height: 1.3;
