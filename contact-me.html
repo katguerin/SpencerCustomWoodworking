@@ -42,7 +42,9 @@
               <a class="nav-link" href="the-shop.html">The Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact Me</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact Me</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -72,95 +74,96 @@
     </nav>
 
     <!-- something is overriding my-auto center for this card. will return to it later -->
+    <div class="container-fluid align-content-center">
+      <!-- <div class="card mb-10"> -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/tools.jpg" class="card-img" alt="image of tools" />
+          </div>
 
-    <div class="card mb-10">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/tools.jpg" class="card-img" alt="image of tools" />
-        </div>
-
-        <div class="col-md-6 my-auto">
-          <div class="card-body">
-            <form>
-              <div class="row mb-3">
-                <div class="col-sm-11">
-                  <!-- validate email not working yet -->
-                  <input
-                    type="inputEmail"
-                    class="form-control"
-                    placeholder="Email"
-                    id="inputEmail"
-                    oninput="ValidateEmail(document.form1.text1)"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-11">
-                <div class="row mb-3">
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="First name"
-                      aria-label="First name"
-                    />
-                  </div>
-                  <div class="col">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Last name"
-                      aria-label="Last name"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-sm-11">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Phone number"
-                    aria-label="Phone number"
-                  />
-                </div>
-              </div>
-
-              <div class="row mb-3 col-sm">
-                <div class="col-form-label pt-0">
+          <div class="col-md-6 my-auto">
+            <div class="card-body">
+              <form>
+                <div class="row-2 mb-3 no-gutters">
                   <div class="col-sm-11">
-                    <select
-                      class="form-select form-select-lg mb-3"
-                      aria-label=".form-select-lg example"
-                    >
-                      <option selected>I am interested in:</option>
-                      <option value="1">Custom Decor</option>
-                      <option value="2">
-                        Custom Home or Commercial Project
-                      </option>
-                      <option value="3">Custom Furniture</option>
-                      <option value="4">Repair</option>
-                      <option value="5">Other</option>
-                    </select>
+                    <!-- validate email not working yet -->
+                    <input
+                      type="inputEmail"
+                      class="form-control"
+                      placeholder="Email"
+                      id="inputEmail"
+                      oninput="ValidateEmail(document.form1.text1)"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="submit" class="btn-lg btn-secondary me-md-2">
-                  Submit
-                </button>
-                <div class="col-1"></div>
-                <!-- need 2 pop ups: 1. your inquery has been submitted! 2. Please complete form -->
-              </div>
-            </form>
+                <div class="col-sm-11">
+                  <div class="row mb-3">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        aria-label="First name"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-11">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Phone number"
+                      aria-label="Phone number"
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3 col-sm">
+                  <div class="col-form-label pt-0">
+                    <div class="col-sm-11">
+                      <select
+                        class="form-select form-select-lg mb-3"
+                        aria-label=".form-select-lg example"
+                      >
+                        <option selected>I am interested in:</option>
+                        <option value="1">Custom Decor</option>
+                        <option value="2">
+                          Custom Home or Commercial Project
+                        </option>
+                        <option value="3">Custom Furniture</option>
+                        <option value="4">Repair</option>
+                        <option value="5">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn-lg btn-secondary me-md-2">
+                    Submit
+                  </button>
+                  <div class="col-1"></div>
+                  <!-- need 2 pop ups: 1. your inquery has been submitted! 2. Please complete form -->
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
