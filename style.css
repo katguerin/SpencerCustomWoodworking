@@ -8,9 +8,8 @@
   background-color: #193042;
 }
 
-
-/* this hamburger does not work yet. invisible hamburger */
-.navbar-toggler .icon-bar {
+/* this hamburger does not work. invisible hamburger  -  useless */
+.navbar-toggler-icon {
   color: #ddd9d6;
   background-color: #193042;
 }
