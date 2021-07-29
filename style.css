@@ -8,10 +8,13 @@
   background-color: #193042;
 }
 
-/* this hamburger does not work. invisible hamburger  -  useless */
-.navbar-toggler-icon {
-  color: #ddd9d6;
-  background-color: #193042;
+.custom-toggler, .navbar-toggler {
+  background-color: #6c757d;
+}
+
+.custom-toggler, .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(221,217,214, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .card {
@@ -53,3 +56,25 @@ p {
 img {
   border: 3px solid #212528;
 }
+/* 
+.carousel .carousel-inner {
+  height: 550px;
+  margin-bottom: 100px;
+  background: #faf9f9;
+} */
+
+/* .control-icon {
+  color: #393939;
+  text-shadow: none;
+} */
+
+.carousel-inner {
+  position: relative;
+}
+/* 
+.carousel-img {
+  width: 400px;
+  height: 800px;
+  background-image: ;
+  background-size: cover;
+} */
